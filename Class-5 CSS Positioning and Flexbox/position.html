@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            margin: 200px;
+            width: 4000px;  
+            height: 4000px;
+        }
+        .container1{
+            border: 3px solid black;
+            background-color: yellowgreen;
+            position: relative;
+            height: 500px;
+        }
+        
+        .container2{
+            border: 2px solid green;
+            background-color: cadetblue;
+            height: 500px;
+        }   
+
+        img{
+            margin: 10px; 
+        }
+
+        .image2{
+            /* position: relative;
+            top:20px */
+            position: sticky;
+            top: 20px;
+            left: 20px;
+
+        }
+
+        .image3{
+            /* position: absolute;
+            top:350px;  */
+            
+      
+        }
+        .image4{
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="container1">
+            <img src="poster1.jpeg" alt="black" width="150px" height="150px" class="image1">
+            <img src="poster2.jpeg" alt="bramhastra" width="150px" height="150px" class="image2">
+            <img src="poster3.jpeg" alt="joker" width="150px" height="150px" class="image3">
+            <img src="poster4.jpeg" alt="avenger" width="150px" height="150px" class="image4">
+        </div>
+        <div class="container2">
+            <img src="poster1.jpeg" alt="black" width="150px" height="150px" class="image1">
+            <img src="poster2.jpeg" alt="bramhastra" width="150px" height="150px" class="image2">
+            <img src="poster3.jpeg" alt="joker" width="150px" height="150px" class="image3">
+            <img src="poster4.jpeg" alt="avenger" width="150px" height="150px" class="image4">
+        </div>
+    </div>
+ 
+</body>
+</html>
