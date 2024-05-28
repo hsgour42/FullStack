@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 300px;
+            background-color: dodgerblue;
+            border: 5px solid black;
+        }
+
+        /* min width is starting point for media query 
+        max width is ending point for media query */
+        @media(min-width:400px)and (max-width:600px){
+            .box{
+                background-color: tomato;
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Coolest batch
+    </div>
+</body>
+</html>

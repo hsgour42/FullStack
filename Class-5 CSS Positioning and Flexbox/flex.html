@@ -10,16 +10,19 @@
             border: 2px solid black;
             height: 500px;
             display:flex;
-            /* flex-wrap: wrap; */
-            /* flex-direction: column; */
-            flex-flow: wrap row;
+            flex-wrap: nowrap; 
+            flex-direction: row;
+            /* flex-flow: wrap row; */
             justify-content: start;
-            align-items: start;    
+            align-items: start; 
+            /* align-self: center;    */
+
+            /* gap: 10%; */
         }
 
         .box{
-            height: 50px;
-            width: 50px;
+            height: 150px;
+            width: 150px;
             margin: 10px;
 
         }
@@ -27,7 +30,7 @@
         .box1{
             background-color: aqua;
             border: 2px solid black;
-            /* flex-grow: 6; */
+            flex-grow: 6;
         }
 
         .box2{
@@ -39,7 +42,7 @@
         .box3{
             background-color: yellow;
             border: 2px solid black;
-            /* flex-shrink: 6; */
+            flex-shrink: 2;
         }
 
         .box4{
