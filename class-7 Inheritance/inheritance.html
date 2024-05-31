@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <style>
+        section{
+            color: red;
+            font-size: 60px;
+            border: 2px solid black;
+            
+        }
+
+        div{
+            /* Inherit the property of parent to chilf */
+            border: inherit;
+            
+            /* display has block property but behave like inline */
+            /* because browser apply some default css and changes it initial value */
+            /* display: initial; */
+            
+            /* unset inherit if the property can be inherited else it will set to initial */
+            display: unset;
+            
+        }
+
+        p{
+            /* Set the property to default value which css provided */
+            color: initial;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>I am a div
+            <p>I am inside div p</p>
+        </div>
+        <p>I am a p</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit</title>
+    <style>
+        /* make any global variable */
+        :root{
+            ---primary : #3456eb;
+        }
+
+        .parent{
+            height: 50vh;
+            width: 50vw;
+            background-color: var(---primary);
+        }
+        
+        .child{
+            width: 50%;
+            height: 50%;
+            background-color: lightseagreen;
+        }
+
+        p{
+            font-size: 1rem ;
+        }
+ 
+        div{
+            font-size: 40px;
+        }
+        
+        div p{
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+    <p>I am in rem</p>
+    <div>
+        <p>I am giving in rem</p>
+    </div>
+</body>
+</html>
